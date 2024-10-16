@@ -13,7 +13,9 @@ RUN apt-get update && \
     wget https://releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_darwin_arm64.zip && \
     unzip terraform_1.9.8_darwin_arm64.zip && \
     mv terraform /usr/local/bin/ && \
-    ls -la /usr/local/bin
+    ls -la /usr/local/bin && \
+    cd /app/src/terraform_aws_example_slow126/terraform_aws_instance && \
+    terraform init
 
 
 CMD ["python", "docker_test.py"]

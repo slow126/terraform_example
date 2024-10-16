@@ -1,0 +1,1 @@
+docker build -t slow1/terraform-aws-example-slow126:latest .
