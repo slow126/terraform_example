@@ -1,1 +1,1 @@
-docker build -t slow1/terraform-aws-example-slow126:latest .
+docker build -t slow1/terraform_example:latest --secret id=aws_keys,src=aws_keys.txt -f Dockerfile .

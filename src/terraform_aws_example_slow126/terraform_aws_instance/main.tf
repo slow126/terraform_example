@@ -21,3 +21,10 @@ resource "aws_instance" "app_server" {
     Name = "ExampleTerraformServerInstance"
   }
 }
+
+/*
+resource "aws_ec2_instance_state" "app_server" {
+    instance_id = aws_instance.app_server.id
+    state = "stopped"
+}
+*/
